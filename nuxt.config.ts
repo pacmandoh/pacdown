@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     'nuxt-og-image'
   ],
   ui: {
-    icons: ['heroicons', 'simple-icons']
+    icons: ['heroicons', 'simple-icons', 'ph']
   },
   // Fonts
   fontMetrics: {
