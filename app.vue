@@ -23,7 +23,7 @@ const isFullScreen = useFullScreen()
 <template>
   <Header v-if="!isFullScreen" />
 
-  <UMain :class="[$route.path === '/' && 'overflow-hidden']">
+  <UMain>
     <NuxtPage />
   </UMain>
 </template>
