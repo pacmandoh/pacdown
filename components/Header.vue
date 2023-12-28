@@ -16,6 +16,8 @@ const links = [{
   exactHash: true
 }]
 
+const { toggle, isFullscreen } = useFullscreen()
+const fullscreenIcon = computed(() => isFullscreen.value ? 'i-ph-arrows-in-bold' : 'i-ph-arrows-out-bold')
 </script>
 
 <template>
@@ -39,13 +41,22 @@ const links = [{
         />
       </UTooltip>
 
-      <UTooltip text="全屏">
+      <UTooltip text="PacGPTs">
         <UButton
-          icon="i-ph-arrows-out-duotone"
-          to="https://github.com/pacmandoh/PacDown"
+          icon="i-simple-icons-openai"
+          to="https://chatgpt.crybabyaq.love/"
           target="_blank"
           v-bind="($ui.button.secondary as any)"
-          aria-label="My GitHub"
+          aria-label="ChatGPT and Gemini Pro"
+        />
+      </UTooltip>
+
+      <UTooltip text="全屏">
+        <UButton
+          :icon="fullscreenIcon"
+          v-bind="($ui.button.secondary as any)"
+          aria-label="Enter Fullscreen"
+          @click="toggle"
         />
       </UTooltip>
     </template>
