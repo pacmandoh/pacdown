@@ -4,25 +4,26 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/icon.png' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'zh'
   }
 })
 
 useSeoMeta({
-  ogSiteName: 'Nuxt UI Pro - Landing template',
+  ogSiteName: 'PacDown: md online for PacDocs',
   twitterCard: 'summary_large_image'
 })
+
+import { useFullScreen } from './composables/states'
+const isFullScreen = useFullScreen()
 </script>
 
 <template>
-  <Header />
+  <Header v-if="!isFullScreen" />
 
-  <UMain>
+  <UMain :class="[$route.path === '/' && 'overflow-hidden']">
     <NuxtPage />
   </UMain>
-
-  <Footer />
 </template>
