@@ -16,7 +16,6 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
-import { useFullScreen } from './composables/states'
 const isFullScreen = useFullScreen()
 </script>
 
