@@ -1,35 +1,53 @@
 <script setup lang="ts">
 const links = [{
-  label: 'Features',
-  to: '#features',
+  label: '开始写作',
+  to: '/',
+  icon: 'i-simple-icons-markdown',
+  exactHash: true
+}, {
+  label: '特性',
+  to: '/feature',
   icon: 'i-heroicons-cube-transparent',
   exactHash: true
 }, {
-  label: 'Pricing',
-  to: '#pricing',
-  icon: 'i-heroicons-credit-card',
-  exactHash: true
-}, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  icon: 'i-heroicons-academic-cap',
-  exactHash: true
-}, {
-  label: 'FAQ',
-  to: '#faq',
+  label: '关于',
+  to: '/about',
   icon: 'i-heroicons-question-mark-circle',
   exactHash: true
 }]
+
 </script>
 
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge label="Landing" variant="subtle" class="mb-0.5" />
+      PacDown <UBadge label="beta" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #right>
-      <UButton label="Log in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
+      <UTooltip :text="$colorMode.preference === 'dark' ? '切换为日间模式' : '切换为暗色模式'">
+        <UColorModeButton />
+      </UTooltip>
+
+      <UTooltip text="GitHub">
+        <UButton
+          icon="i-simple-icons-github"
+          to="https://github.com/pacmandoh/PacDown"
+          target="_blank"
+          v-bind="($ui.button.secondary as any)"
+          aria-label="My GitHub"
+        />
+      </UTooltip>
+
+      <UTooltip text="全屏">
+        <UButton
+          icon="i-ph-arrows-out-duotone"
+          to="https://github.com/pacmandoh/PacDown"
+          target="_blank"
+          v-bind="($ui.button.secondary as any)"
+          aria-label="My GitHub"
+        />
+      </UTooltip>
     </template>
 
     <template #panel>
