@@ -12,6 +12,13 @@ export default defineNuxtConfig({
   ui: {
     icons: ['heroicons', 'simple-icons', 'ph']
   },
+  routeRules: {
+    // Pre-render
+    '/*': { prerender: true }
+  },
+  runtimeConfig: {
+    // apiKey
+  },
   // Fonts
   fontMetrics: {
     fonts: ['DM Sans']

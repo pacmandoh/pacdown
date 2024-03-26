@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const links = [{
   label: '开始写作',
   to: '/',
@@ -23,7 +24,11 @@ const fullscreenIcon = computed(() => isFullscreen.value ? 'i-ph-arrows-in-bold'
 <template>
   <UHeader :links="links">
     <template #logo>
-      PacDown <UBadge label="beta" variant="subtle" class="mb-0.5" />
+      <div class="flex flex-row gap-1 items-center justify-center">
+        <Logo />
+        <div>Pac<span class="text-primary-500 dark:text-primary-400">Down</span></div>
+        <UBadge label="beta" variant="subtle" class="mb-0.5" />
+      </div>
     </template>
 
     <template #right>
@@ -56,7 +61,7 @@ const fullscreenIcon = computed(() => isFullscreen.value ? 'i-ph-arrows-in-bold'
           :icon="fullscreenIcon"
           v-bind="($ui.button.secondary as any)"
           aria-label="Enter Fullscreen"
-          @click="toggle"
+          @click="toggle()"
         />
       </UTooltip>
     </template>

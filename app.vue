@@ -15,12 +15,10 @@ useSeoMeta({
   ogSiteName: 'PacDown: md online for PacDocs',
   twitterCard: 'summary_large_image'
 })
-
-const isFullScreen = useFullScreen()
 </script>
 
 <template>
-  <Header v-if="!isFullScreen" />
+  <Header v-show="!useFullScreen().isFullScreen.value" />
 
   <UMain>
     <NuxtPage />
