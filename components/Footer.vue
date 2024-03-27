@@ -60,7 +60,16 @@ function onSubmit () {
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
-              <UInput v-model="email" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm">
+              <UInput
+                v-model="email"
+                type="email"
+                placeholder="Enter your email"
+                :ui="{ icon: { trailing: { pointer: '' } } }"
+                required
+                size="xl"
+                autocomplete="off"
+                class="max-w-sm"
+              >
                 <template #trailing>
                   <UButton type="submit" size="xs" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
                 </template>
@@ -80,7 +89,14 @@ function onSubmit () {
     <template #right>
       <UColorModeButton size="sm" />
 
-      <UButton to="https://github.com/nuxt-ui-pro/landing" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+      <UButton
+        to="https://github.com/nuxt-ui-pro/landing"
+        target="_blank"
+        icon="i-simple-icons-github"
+        aria-label="GitHub"
+        color="gray"
+        variant="ghost"
+      />
     </template>
   </UFooter>
 </template>
