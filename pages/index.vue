@@ -8,11 +8,13 @@ useSeoMeta({
   ogDescription: page.value.description
 })
 
-defineOgImage({
-  component: 'Landing',
-  title: page.value.title,
-  description: page.value.description
-})
+defineOgImageComponent(
+  'Landing',
+  {
+    title: page.value.title,
+    description: page.value.description
+  }
+)
 
 const vditorContent = `
 # 欢迎使用 \`PacDown\` 在线 Markdown 编辑器
