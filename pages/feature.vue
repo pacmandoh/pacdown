@@ -1,5 +1,5 @@
 <template>
   <div>
-    特性
+    ZHANGHAOWEN DAO CI YI YOU
   </div>
 </template>
