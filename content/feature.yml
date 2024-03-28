@@ -1,0 +1,51 @@
+title: '特性 · PacDown'
+description: 'PacDown 特性、以及使用介绍，让您能更快的上手 PacDown 和 Vditor'
+hero:
+  title: 'PacDown - 在线 md 编辑器'
+  description: 'PacDown 同所有 Pac- 前缀的项目一样，旨在为在线学习提供便利性。同样 PacDocs 中也有内嵌的 PacDown，为您的在线学习提供笔记助手。本项目基于 Nuxt、Nuxt/ui 以及 Vditor (核心)。Made with love ❤️ by pacmandoh'
+  headline:
+    label: 使用 PacDocs
+    to: https://crybabyaq.love
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: 学习 Markdown
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: 'https://markdown.com.cn'
+      target: '_blank'
+    - label: 给我点赞 🌟
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: 'https://github.com/pacmandoh/pacdown'
+      target: '_blank'
+logos:
+  title: 由以下项目强力驱动
+  icons:
+    - i-simple-icons-nuxtdotjs
+    - i-simple-icons-vuedotjs
+    - i-simple-icons-tailwindcss
+    - i-simple-icons-markdown
+    - i-simple-icons-visualstudiocode
+features:
+  headline: 功能
+  title: PacDown 包含什么？
+  description: 作为在线 md 编辑器，PacDown 致力于差异化，吸收许多在线 Markdown 编辑器优点，整合存在的许多优秀功能，尽力做到能媲美本地编辑器！
+  items:
+    - title: 无需登陆，访问即用
+      description: 作为一个在线 md 编辑器，访问页面即可使用全部功能，无需注册登陆，便捷高效
+      icon: i-ph-rocket-launch-duotone
+    - title: 隐私保护
+      description: PacDown 作为一个纯前端项目，除了语音以及图片上传功能，不会记录用户的任何信息，信息都作为浏览器缓存保存
+      icon: i-ph-lock-key-duotone
+    - title: 图片/语音上传
+      description: 使用 Python-Flask 框架作为图片/语音上传的后端，您也无需担心隐私的泄露
+      icon: i-ph-upload-simple-duotone
+    - title: 夜间模式支持
+      description: 日间\夜间模式随意切换，保护您的眼睛，激发您的创作激情
+      icon: i-ph-cloud-moon-duotone
+    - title: 全屏模式
+      description: 支持全屏模式，让您集中注意力完成您的创作
+      icon: i-ph-arrows-out-bold
+    -
+
