@@ -33,7 +33,7 @@ const { width } = useWindowSize()
 const renderMode = computed(() => width.value >= 1024 ? 'sv' : 'ir')
 
 // option
-const CDN = 'https://imgbucket-1318471229.cos.ap-beijing.myqcloud.com/cdnjs/vditor%403.10.2'
+const CDN = 'https://imgbucket-1318471229.cos.ap-beijing.myqcloud.com/cdnjs/vditor%403.10.3'
 const option: IOptions = {
   cdn: CDN,
   height: '100%',
