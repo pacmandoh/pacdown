@@ -29,6 +29,6 @@ onBeforeUnmount(() => document.body.style.overflow = '')
 
 <template>
   <div :class="style.container">
-    <Vditor :content="vditorContent" />
+    <ToolVditor :content="vditorContent" />
   </div>
 </template>

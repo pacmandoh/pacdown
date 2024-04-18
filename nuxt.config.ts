@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     'nuxt-og-image',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@nuxt/eslint'
   ],
   ui: {
     icons: ['heroicons', 'simple-icons', 'ph']
@@ -29,6 +30,22 @@ export default defineNuxtConfig({
     families: {
       'DM+Sans': [400, 500, 600, 700]
     }
+  },
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never'
+      }
+    }
+  },
+  // ogImage support Chinese
+  ogImage: {
+    fonts: [
+      'Noto+Sans+SC:400',
+      'Noto+Sans+SC:500',
+      'Noto+Sans+SC:600',
+      'Noto+Sans+SC:700'
+    ]
   },
   // Devtools / Typescript
   devtools: { enabled: true },

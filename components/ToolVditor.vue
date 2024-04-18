@@ -65,7 +65,7 @@ const option: IOptions = {
     accept: 'image/*',
     multiple: false,
     fieldName: 'file',
-    success (_, msg) {
+    success(_, msg) {
       vditor.value.insertValue(`![${JSON.parse(msg).date}](${JSON.parse(msg).file_url})`)
     }
   },
@@ -99,7 +99,7 @@ const option: IOptions = {
     '|',
     {
       name: 'fullscreen',
-      click () { useFullScreen().ToggleFullScreen() }
+      click() { useFullScreen().ToggleFullScreen() }
     },
     'edit-mode',
     {
@@ -162,7 +162,6 @@ const transCache = () => {
   if (localStorage.getItem('vditor')) localStorage.setItem('pacdown', localStorage.getItem('vditor'))
 }
 
-
 onMounted(() => {
   transCache()
   initVditor()
@@ -172,7 +171,6 @@ onBeforeUnmount(() => {
   transCache()
   destroyVditor()
 })
-
 </script>
 
 <style scoped lang="postcss">

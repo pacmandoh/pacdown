@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const links = [{
   label: '开始写作',
   to: '/',

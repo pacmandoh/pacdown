@@ -18,7 +18,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <Header v-show="!useFullScreen().isFullScreen.value" />
+  <AppHeader v-show="!useFullScreen().isFullScreen.value" />
 
   <UMain>
     <NuxtPage />
