@@ -16,6 +16,12 @@
 <script setup lang="ts">
 import Vditor from 'vditor'
 import 'vditor/dist/index.css'
+import pkg from '~/package.json'
+
+const vditorVersion = pkg.dependencies.vditor.replace('^', '')
+console.groupCollapsed('[vditor info | 信息]:')
+console.log('➜ [vditor.version]: ', vditorVersion)
+console.groupEnd()
 
 const props = defineProps({
   content: {
@@ -33,7 +39,7 @@ const { width } = useWindowSize()
 const renderMode = computed(() => width.value >= 1024 ? 'sv' : 'ir')
 
 // option
-const CDN = 'https://imgbucket-1318471229.cos.ap-beijing.myqcloud.com/cdnjs/vditor%403.10.3'
+const CDN = `https://imgbucket-1318471229.cos.ap-beijing.myqcloud.com/cdnjs/vditor%40${vditorVersion}`
 const option: IOptions = {
   cdn: CDN,
   height: '100%',
