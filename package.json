@@ -31,10 +31,10 @@
     "vditor": "^3.10.4"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.1.5",
+    "@nuxt/devtools": "^1.2.0",
     "@nuxt/eslint": "^0.3.8",
     "bumpp": "^9.4.0",
-    "eslint": "^9.0.0",
+    "eslint": "^9.1.0",
     "changelogithub": "^0.13.7",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.13"
