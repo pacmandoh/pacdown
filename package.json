@@ -34,7 +34,7 @@
     "@nuxt/devtools": "^1.2.0",
     "@nuxt/eslint": "^0.3.10",
     "bumpp": "^9.4.1",
-    "eslint": "^9.1.1",
+    "eslint": "^9.2.0",
     "changelogithub": "^0.13.7",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.16"
