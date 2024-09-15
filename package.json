@@ -26,7 +26,7 @@
     "@vueuse/components": "^10.10.0",
     "@vueuse/core": "^10.10.0",
     "@vueuse/nuxt": "^10.10.0",
-    "nuxt": "^3.11.2",
+    "nuxt": "^3.13.2",
     "nuxt-og-image": "3.0.0-rc.53",
     "vditor": "^3.10.4"
   },
